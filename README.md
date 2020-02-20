@@ -6,7 +6,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ashish-chopra/ngx-gauge/issues)
 
 
-A highly customizable Gauge component for **Angular 6 and 7+** apps and dashboards. It provides many configurationable options to customize according to your needs. Checkout the live demo [here](https://ashish-chopra.github.io/ngx-gauge).
+A highly customizable Gauge component for **Angular 6+** apps and dashboards. It provides many configurationable options to customize according to your needs. Checkout the live demo [here](https://ashish-chopra.github.io/ngx-gauge).
 
 ![alt text](https://raw.githubusercontent.com/ashish-chopra/angular-gauge/master/examples/examples.png)
 
@@ -86,6 +86,9 @@ There are plenty of configurable properties available to tune the gauge as per y
 | `duration`    | Specifies the duration (in milliseconds) of the Gauge's animation | No       | `1500` | Positive Integer           |
 | `thresholds` | Specifies an object of threshold values at which the gauge's color changes. Checkout an example [here](#configure-threshold-color-ranges).  | No |  `none` | {}
 | `animate` | toggles the gauge animation.  | No |  `true` | boolean
+| `aria-label` | Specifies the label used by screen readers | No | `undefined` | Any String
+| `aria-labelledby` | Specifies the ID of any external element to be used as label by screen readers | No | `null` | Any ID String
+
 
 ## Configure Threshold Color Ranges
 
