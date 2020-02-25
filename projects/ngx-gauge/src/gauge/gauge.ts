@@ -299,8 +299,8 @@ export class NgxGauge implements AfterViewInit, OnChanges, OnDestroy {
             color = this._getForegroundColorByRange(value),
             startTime;
 
-        if (self._animationRequestID) {
-            window.cancelAnimationFrame(self._animationRequestID);
+        if (this._animationRequestID) {
+            window.cancelAnimationFrame(this._animationRequestID);
         }
 
         const animate = timestamp => {
