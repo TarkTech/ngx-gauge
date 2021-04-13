@@ -157,14 +157,15 @@ export class NgxGauge implements AfterViewInit, OnChanges, OnDestroy {
         this._renderer.setStyle(this._elementRef.nativeElement, 'height', cssUnit(this._getCanvasHeight()));
         this._canvas.nativeElement.width = this._getWidth();
         this._canvas.nativeElement.height = this._getCanvasHeight();
-        this._renderer.setStyle(this._label.nativeElement,
-            'transform', 'translateY(' + (this.size / 3 * 2 - this.size / 13 / 4) + 'px)');
-        this._renderer.setStyle(this._reading.nativeElement,
-            'transform', 'translateY(' + (this.size / 2 - this.size * 0.22 / 2) + 'px)');
+        // Removed translate Y as we want labels within the gauge
+        // this._renderer.setStyle(this._label.nativeElement,
+        //     'transform', 'translateY(' + (this.size / 3 * 2 - this.size / 13 / 4) + 'px)');
+        // this._renderer.setStyle(this._reading.nativeElement,
+        //     'transform', 'translateY(' + (this.size / 2 - this.size * 0.22 / 2) + 'px)');
     }
 
     ngAfterViewInit() {
-        if (this._canvas && this._label && this._reading) {
+        if (this._canvas) {
             this._init();
         }
     }
