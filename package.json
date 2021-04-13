@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pack": "cd dist/ngx-gauge && npm pack"
+    "pack": "cd dist/ngx-gauge && npm pack",
+    "publish": "cd dist/ngx-gauge && npm publish"
   },
   "private": true,
   "dependencies": {
