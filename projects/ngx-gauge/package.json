@@ -1,6 +1,6 @@
 {
   "name": "@tarktech/ngx-gauge",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A highly customizable Gauge Component for Angular 4+ apps and dashboards",
   "repository": {
     "type": "git",
