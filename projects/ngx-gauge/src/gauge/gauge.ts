@@ -164,7 +164,7 @@ export class NgxGauge implements AfterViewInit, OnChanges, OnDestroy {
     }
 
     ngAfterViewInit() {
-        if (this._canvas) {
+        if (this._canvas && this._label && this._reading) {
             this._init();
         }
     }

@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pack": "cd dist/ngx-gauge && npm pack",
-    "link": "cd dist/ngx-gauge && npm link"
+    "link": "cd dist/ngx-gauge && npm link",
+    "publish": "cd dist/ngx-gauge && npm publish"
   },
   "private": true,
   "dependencies": {
